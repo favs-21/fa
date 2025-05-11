@@ -1,10 +1,6 @@
 # fa
 QUESTION 1
-def modify_line(line):
-    # Example modification: convert to uppercase
-    return line.upper()
 
-try:
     # Read from source file
     with open("input.txt", "r") as infile:
         lines = infile.readlines()
@@ -18,21 +14,10 @@ try:
 
     print("File processed successfully.")
 
-except FileNotFoundError:
-    print("Error: The input file was not found.")
-except PermissionError:
-    print("Error: Permission denied when accessing the file.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+
 QUESTION 2
 
-def modify_line(line):
-    # Example modification: strip whitespace and convert to uppercase
-    return line.strip().upper() + '\n'
 
-filename = input("Enter the name of the file to read: ")
-
-try:
     with open(filename, "r") as infile:
         lines = infile.readlines()
 
@@ -46,12 +31,7 @@ try:
 
     print(f"Modified content written to {output_filename}.")
 
-except FileNotFoundError:
-    print(f"Error: File '{filename}' not found.")
-except PermissionError:
-    print(f"Error: Permission denied to read '{filename}'.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+
 
 
 
